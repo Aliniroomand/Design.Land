@@ -8,12 +8,16 @@ export default {
 
     extend: {
       colors:{
-        lightPink:"#FBE5E5",
+        lightPink:"#f97fbc61",
         lightPink2:"#FFA1C9",
         darkPink:"#F94892",
         darkPink2:"#E60965",
         darkPurple:"#680747",
-        Black:"#141010"
+        Black:"#141010",
+        lightBG:"#a8b1eb",
+        lightBG2:"#96cfec",
+
+        //  , #6c779a
       },
       fontFamily:{
         fa1:"Amiri",
@@ -23,10 +27,11 @@ export default {
       container:{
         center:true,
         padding:"15px"
-      }
-
-      
-    },
+      },
+      dropShadow:{
+        "4xl":"-5px 5px 3px #000"
+      },
+     }
   },
   plugins: [],
 }

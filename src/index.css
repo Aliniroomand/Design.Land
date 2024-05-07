@@ -9,10 +9,76 @@
 @layer base{
     html{
         font-family:iranSans;
-        background: linear-gradient(0deg, rgba(182, 0, 106, 0.816) 0%, rgba(116, 109, 174, 0.359) 100%);
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-color: #a8b1eb;
         height: 100svh;
         width: 100svw;
-    }
+
+    }}
+    @layer utilities {
+        /* animations _______ */
+        @keyframes slideInRight {
+            0% {
+            transform: translateX(100%);
+            visibility: visible;
+            }
+            100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }}
+        .slideInRight{
+            animation: slideInRight 1s ease-in-out  ;
+        }
+        @keyframes wobble {
+            0% {
+                transform:translate(0);
+            }
+            20% {
+                transform:translate(5px,-5px);
+            }
+            40% {
+                transform:translate(5px,5px);
+            }
+            60% {
+                transform:translate(-5px,5px);
+            }
+            80% {
+                transform:translate(-5px,-5px);
+            }
+            100% {
+                transform:translate(0);
+            }}
+            .wobble {
+            animation: wobble 4s ease-in-out infinite ;
+        }
+        .wobble_with_delay{
+            animation: wobble 6s ease-in-out infinite forwards;
+            animation-delay: 0.5s;
+        }
+        @keyframes fadeOut {
+			
+            0% {
+                transform:translateX(0);
+                opacity:1;
+            }
+            100% {
+                transform:translateX(100%);
+                opacity:0;
+            }
+        }
+        .fadeOut{
+            animation: fadeOut 1s  ease-in-out forwards;
+        }
+        /* ___________________ */
+        .Nav_menu{
+            position: fixed ;
+            display:flex;
+            flex-direction: column;
+             justify-content: end;
+            width:70%;
+             bottom: 0; 
+             right:0; 
+             z-index:50;
+             background: linear-gradient(90deg, rgba(168,177,235,1) 0%, rgba(249, 127, 188, 0.382) 20%, rgba(249, 127, 188, 0.599) 50%);
+        }
+
 }
