@@ -26,10 +26,10 @@ export default {
       },
       container:{
         center:true,
-        padding:"15px"
       },
       dropShadow:{
-        "4xl":"-5px 5px 3px #000"
+        "4xl":"-5px 5px 3px #000",
+        "text":"0 0 3px #fff"
       },
      }
   },
