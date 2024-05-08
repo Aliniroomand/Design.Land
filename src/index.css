@@ -54,15 +54,13 @@
             height: 100%;
             padding:5% 0 5% 0 ;
            bottom: 0;
-
-           transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
              z-index:100;
              background: linear-gradient(90deg, rgba(168,177,235,1) 0%, rgba(249, 127, 188, 0.382) 20%, rgba(249, 127, 188, 0.599) 50%);
         }
         .deactived_menu{
             transform:translateX(100%);
             opacity:0;
-            transition: all 1s;
+            transition: all 1s ease;
         }
         .actived_menu{
             transform:translateX(0);
@@ -76,7 +74,7 @@
             justify-content: start;
             height: 20%;
             animation: wobble 6s ease-in-out infinite forwards;
-            animation-delay: 0.5s;
+            animation-delay: 1s;
             cursor:pointer;
         }
         
