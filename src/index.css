@@ -55,17 +55,17 @@
             padding:5% 0 5% 0 ;
            bottom: 0;
              z-index:100;
-             background: linear-gradient(90deg, rgba(168,177,235,1) 0%, rgba(249, 127, 188, 0.382) 20%, rgba(249, 127, 188, 0.599) 50%);
+             background: linear-gradient(90deg, rgba(168, 177, 235, 0) 0%, rgba(249, 127, 188, 0.097) 20%, rgba(249, 127, 188, 0.268) 50%);
         }
         .deactived_menu{
             transform:translateX(100%);
-            opacity:0;
-            transition: all 1s ease;
+            visibility:hidden;
+            transition: transform 0.5s ,visibility 0.5s;
         }
         .actived_menu{
             transform:translateX(0);
-            opacity:1;
-            transition: all 1s ease;
+            visibility:visible;
+            transition: transform 0s ,visibility 0.5s;
         }
         .nav_childs_container{
             position: relative;
