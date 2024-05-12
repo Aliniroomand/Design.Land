@@ -29,8 +29,10 @@ export default {
       },
       dropShadow:{
         "4xl":"-5px 5px 3px #000",
-        "text":"0 0 3px #fff"
+        "3xl":"0 0 3px #fff,-2px 2px 3px #000 ",
+        "text":"0 0 3px #fff,-2px 2px 3px #000 "
       },
+      
      }
   },
   plugins: [],
