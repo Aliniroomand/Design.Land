@@ -4,6 +4,11 @@ import signsStand from '../assets/images/Root/woodenHolder2.png'
 import signsArrow1 from '../assets/images/Root/signArrow1.png'
 import signsArrow2 from '../assets/images/Root/signArrow2.png'
 import signArrowTop from '../assets/images/Root/signArrow3.png'
+import balloon from '../assets/images/balloon/balloon_logo.png'
+import flower_design from "../assets/images/flower designs/bride_flower_design.png"
+import fruit_design from "../assets/images/fruit design/fruit_nav.png"
+import contatct_us from "../assets/images/contact us & comments/call us.png"
+// components
 import FloatedItems from './FloatedItems'
 
 
@@ -18,33 +23,60 @@ const Home = () => {
 {/* Arrows Part */}
             <main className='relative w-screen h-screen'>
                 <section>
-{/* stand */}
-                    <img className='absolute z-20 w-1/2 h-full left-1/4 right-1/4' src={signsStand} alt="signsStand" />
+    {/* stand */}
+                    <img className='absolute z-20 w-1/3 sm:w-[10%] h-full left-1/3 sm:right-[45%] ' src={signsStand} alt="signsStand" />
                 </section>
-{/* ____stand___ */}
-{/* Arrows */}
-                <section className='relative grid place-items-center z-30 w-full h-1/6'>
-                    <img className='absolute w-[800px] md:h-full h-full top-0 ' src={signArrowTop} alt="signsArrow1" />
-                    <p className='absolute md:text-5xl lg:text-2xl xl text-2xl drop-shadow-3xl text-center h-1/3 top-4 text_shadow  '>خوش اومدی <br/>کدوم قسمت از هنر ما رو میخای ببینی؟</p>
+    {/* ____stand___ */}
+    {/* Arrows */}
+        {/*Title Arrow*/}
+                <section className='relative grid place-items-center z-30 w-full h-1/6 drop-shadow-4xl '>
+                    <img className='absolute w-[800px] md:h-full h-full top-0 lg:w-2/5' src={signArrowTop} alt="signsArrow1" />
+                    <p className='absolute md:text-5xl lg:text-2xl xl text-2xl text-center h-1/3 top-4 text_shadow font-semibold '>به دنیای رنگی دیزاین لند خوش اومدی <br/>کدوم قسمت از هنر ما رو میخای ببینی؟</p>
                 </section>
-                <section className='relative grid place-items-center z-30 w-full h-1/6 top-1/6'>
-                    <img className='absolute w-[800px] md:h-full h-2/3 ' src={signsArrow1} alt="signsArrow1" />
-                    <p className='absolute md:text-6xl lg:text-4xl text-3xl drop-shadow-3xl text_shadow '>دیزاین با بادکنک</p>
+        {/*____Title Arrow_____*/}
+
+        {/* Balloon Arrow */}
+                <section className='relative flex items-center justify-center z-30 w-full h-1/6 top-1/6'>
+                    <img className='absolute w-[800px] md:h-full lg:w-2/5 h-2/3 drop-shadow-4xl' src={signsArrow1} alt="signsArrow1" />
+                    <section className=' w-[800px] px-5 flex items-center justify-evenly md:justify-around lg:w-2/5 gap-0 h-1/2 z-10'>
+                        <img className=" h-full images_shadow lg:w-1/6 " src={balloon} alt="balloon" />
+                        <p  className=' w-2/3 md:text-5xl lg:text-2xl lg:w-4/6 text-2xl text_shadow font-medium '>دیزاین با بادکنک</p>
+                    </section>
                 </section>
-                <section className='relative grid place-items-center z-30 w-full h-1/6 top-2/6'>
-                    <img className='absolute w-[800px] md:h-full h-2/3 ' src={signsArrow2} alt="signsArrow2" />
-                    <p className='absolute md:text-6xl lg:text-4xl text-3xl drop-shadow-3xl text_shadow '>دیزاین با گل و گل آرایی</p>
+        {/*____Balloon Arrow_____*/}
+
+        {/*Flower Arrow*/}
+                <section className='relative flex items-center justify-center z-30 w-full h-1/6 top-1/6'>
+                    <img className='absolute w-[800px] lg:w-2/5 md:h-full h-2/3 drop-shadow-4xl' src={signsArrow2} alt="signsArrow2" />
+                    <section className=' w-[800px] px-5 flex flex-row-reverse items-center justify-evenly md:justify-around lg:w-2/5 gap-0 h-1/2 z-10'>
+                        <img className=" h-full images_shadow lg:w-1/6 " src={flower_design} alt="flower_design" />
+                        <p  className=' w-2/3 md:text-5xl lg:text-2xl lg:w-4/6 text-2xl text_shadow font-medium '>دیزاین با گل و گل آرایی</p>
+                    </section>
                 </section>
-                <section className='relative grid place-items-center z-30 w-full h-1/6 top-3/6'>
-                    <img className='absolute w-[800px] md:h-full h-2/3 ' src={signsArrow1} alt="signsArrow2" />
-                    <p className='absolute md:text-6xl lg:text-4xl text-3xl drop-shadow-3xl text_shadow '>میوه آرایی و طراحی میوه</p>
+        {/*____Flower Arrow_____*/}
+
+        {/*Fruit Arrow*/}
+                <section className='relative flex items-center justify-center z-30 w-full h-1/6 top-1/6'>
+                    <img className='absolute w-[800px] lg:w-2/5 md:h-full h-2/3 drop-shadow-4xl' src={signsArrow1} alt="signsArrow2" />
+                    <section className=' w-[800px] px-5 flex items-center justify-evenly md:justify-around lg:w-2/5 gap-0 h-1/2 z-10'>
+                        <img className=" h-full images_shadow lg:w-1/6 " src={fruit_design} alt="fruit_design" />
+                        <p  className=' w-2/3 md:text-5xl lg:text-2xl lg:w-4/6 text-xl text_shadow font-medium '>دیزاین با میوه و میوه آرایی</p>
+                    </section>
                 </section>
-                <section className='relative grid place-items-center z-30 w-full h-1/6 top-1/6'>
-                    <img className='absolute w-[800px] md:h-full h-2/3 ' src={signsArrow2} alt="signsArrow2" />
-                    <p className='absolute md:text-6xl lg:text-4xl text-3xl drop-shadow-3xl text_shadow '>نظرات و تماس با ما</p>
-                </section>
-  
+        {/*____Fruit Arrow______*/}
+
+        {/*Contact Arrow*/}
+        <section className='relative flex items-center justify-center z-30 w-full h-1/6 top-1/6'>
+                    <img className='absolute w-[800px] md:h-full lg:w-2/5 h-2/3 drop-shadow-4xl' src={signsArrow2} alt="signsArrow1" />
+                    <section className=' w-[800px] px-5 flex flex-row-reverse items-center justify-evenly md:justify-around lg:w-2/5 gap-0 h-1/2 z-10'>
+                        <img className=" h-full images_shadow lg:w-1/6 " src={contatct_us} alt="contatct_us" />
+                        <p  className=' w-2/3 md:text-5xl lg:text-2xl lg:w-4/6 text-xl text_shadow font-medium '>تماس با ما و نظرات مشتریان</p>
+                    </section>
+        </section>
+    {/*____Contact Arrow_______*/}
+
 {/* ____Arrows___ */}
+  
 {/*______Arrows Part______ */}
             </main>
 {/* Floated Items Part */}

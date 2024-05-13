@@ -28,9 +28,9 @@ export default {
         center:true,
       },
       dropShadow:{
-        "4xl":"-5px 5px 3px #000",
-        "3xl":"0 0 3px #fff,-2px 2px 3px #000 ",
-        "text":"0 0 3px #fff,-2px 2px 3px #000 "
+        "4xl":"-5px 5px 3px #2b2b2b",
+        "3xl":"-2px 2px 3px #000 ",
+        "text":"1px -1px 3px #fff",
       },
       
      }
