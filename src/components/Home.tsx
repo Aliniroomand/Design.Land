@@ -9,11 +9,15 @@ import flower_design from "../assets/images/flower designs/bride_flower_design.p
 import fruit_design from "../assets/images/fruit design/fruit_nav.png"
 import contatct_us from "../assets/images/contact us & comments/call us.png"
 // components
-import FloatedItems from './FloatedItems'
+import FloatedItems from './helper/FloatedItems'
+import { Link } from 'react-router-dom'
+import PagesTransition from './helper/PageTransition'
 
 
 const Home = () => {
+
     return (
+        <PagesTransition >
         <>
 
 {/* background */}
@@ -36,43 +40,43 @@ const Home = () => {
         {/*____Title Arrow_____*/}
 
         {/* Balloon Arrow */}
-                <section className='relative flex items-center justify-center z-30 w-full h-1/6 top-1/6'>
+                <Link to="/balloon" className='relative flex items-center justify-center z-30 w-full h-1/6 top-1/6 hover_animation'>
                     <img className='absolute w-[800px] md:h-full lg:w-2/5 h-2/3 drop-shadow-4xl' src={signsArrow1} alt="signsArrow1" />
                     <section className=' w-[800px] px-5 flex items-center justify-evenly md:justify-around lg:w-2/5 gap-0 h-1/2 z-10'>
                         <img className=" h-full images_shadow lg:w-1/6 " src={balloon} alt="balloon" />
                         <p  className=' w-2/3 md:text-5xl lg:text-2xl lg:w-4/6 text-2xl text_shadow font-medium '>دیزاین با بادکنک</p>
                     </section>
-                </section>
+                </Link >
         {/*____Balloon Arrow_____*/}
 
         {/*Flower Arrow*/}
-                <section className='relative flex items-center justify-center z-30 w-full h-1/6 top-1/6'>
+                <Link to="/flower" className='relative flex items-center justify-center z-30 w-full h-1/6 top-1/6 hover_animation'>
                     <img className='absolute w-[800px] lg:w-2/5 md:h-full h-2/3 drop-shadow-4xl' src={signsArrow2} alt="signsArrow2" />
                     <section className=' w-[800px] px-5 flex flex-row-reverse items-center justify-evenly md:justify-around lg:w-2/5 gap-0 h-1/2 z-10'>
                         <img className=" h-full images_shadow lg:w-1/6 " src={flower_design} alt="flower_design" />
                         <p  className=' w-2/3 md:text-5xl lg:text-2xl lg:w-4/6 text-2xl text_shadow font-medium '>دیزاین با گل و گل آرایی</p>
                     </section>
-                </section>
+                </Link>
         {/*____Flower Arrow_____*/}
 
         {/*Fruit Arrow*/}
-                <section className='relative flex items-center justify-center z-30 w-full h-1/6 top-1/6'>
+                <Link to="/fruit" className='relative flex items-center justify-center z-30 w-full h-1/6 top-1/6 hover_animation'>
                     <img className='absolute w-[800px] lg:w-2/5 md:h-full h-2/3 drop-shadow-4xl' src={signsArrow1} alt="signsArrow2" />
                     <section className=' w-[800px] px-5 flex items-center justify-evenly md:justify-around lg:w-2/5 gap-0 h-1/2 z-10'>
                         <img className=" h-full images_shadow lg:w-1/6 " src={fruit_design} alt="fruit_design" />
                         <p  className=' w-2/3 md:text-5xl lg:text-2xl lg:w-4/6 text-xl text_shadow font-medium '>دیزاین با میوه و میوه آرایی</p>
                     </section>
-                </section>
+                </Link>
         {/*____Fruit Arrow______*/}
 
         {/*Contact Arrow*/}
-        <section className='relative flex items-center justify-center z-30 w-full h-1/6 top-1/6'>
+                <Link to='/commentsAndContact' className='relative flex items-center justify-center z-30 w-full h-1/6 top-1/6 hover_animation'>
                     <img className='absolute w-[800px] md:h-full lg:w-2/5 h-2/3 drop-shadow-4xl' src={signsArrow2} alt="signsArrow1" />
                     <section className=' w-[800px] px-5 flex flex-row-reverse items-center justify-evenly md:justify-around lg:w-2/5 gap-0 h-1/2 z-10'>
                         <img className=" h-full images_shadow lg:w-1/6 " src={contatct_us} alt="contatct_us" />
                         <p  className=' w-2/3 md:text-5xl lg:text-2xl lg:w-4/6 text-xl text_shadow font-medium '>تماس با ما و نظرات مشتریان</p>
                     </section>
-        </section>
+                </Link>
     {/*____Contact Arrow_______*/}
 
 {/* ____Arrows___ */}
@@ -83,6 +87,7 @@ const Home = () => {
             <FloatedItems/>
 {/*__________Floated Items Part_______*/}
         </>
+    </PagesTransition>
     );
 };
 

@@ -1,8 +1,8 @@
-import balloon from '../assets/images/balloon/floated_three_balloons_compressed.png'
-import flower1 from '../assets/images/flower designs/flower_1.png'
-import flower2 from '../assets/images/flower designs/flower_3.png'
-import fruit1 from '../assets/images/fruit design/floated_fruit_compressed.png'
-import fruit2 from '../assets/images/fruit design/floated_fruit_compressed2.png'
+import balloon from '../../assets/images/balloon/floated_three_balloons_compressed.png'
+import flower1 from '../../assets/images/flower designs/flower_1.png'
+import flower2 from '../../assets/images/flower designs/flower_3.png'
+import fruit1 from '../../assets/images/fruit design/floated_fruit_compressed.png'
+import fruit2 from '../../assets/images/fruit design/floated_fruit_compressed2.png'
 
 
 const FloatedItems = () => {
