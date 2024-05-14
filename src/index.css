@@ -17,7 +17,7 @@
     @layer utilities {
 /* animations _______ */
 
-@keyframes wobble {
+        @keyframes wobble {
     0% {
         transform:translate(0);
             }
@@ -135,7 +135,7 @@
             cursor:pointer;
         }
         .text_shadow{
-            text-shadow: 2px -2px 7px #fff, -1px 1px 4px #000000 ;
+            text-shadow: -2px 2px 5px #000000 ;
         }
         .images_shadow{
             filter: drop-shadow(-5px 5px 3px #2b2b2b)drop-shadow(0px -2px 7px #ffffff96);
