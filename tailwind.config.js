@@ -10,7 +10,7 @@ export default {
       colors:{
         lightPink:"#f97fbc61",
         lightPink2:"#FFA1C9",
-        darkPink:"#F94892",
+        mainPink:"RGB(218 119 163)",
         darkPink2:"#E60965",
         darkPurple:"#680747",
         Black:"#141010",

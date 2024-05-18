@@ -6,6 +6,10 @@
     font-family: "iranSans";
     src: url("./assets/fonts/IRANSansXMedium.ttf") format("truetype");
 }
+@font-face{
+    font-family: "Nastaliq"; 
+    src: url("./assets/fonts/IranNastaliq.ttf") format("truetype"); 
+}
 @layer base{
     html{
         font-family:iranSans;
@@ -134,7 +138,7 @@
             cursor:pointer;
         }
         .text_shadow{
-            text-shadow: -2px 2px 5px #000000 ;
+            text-shadow: 1px 1px 1px #000000a7, 3px -3px 3px #ffffff54 ;
         }
         .images_shadow{
             filter: drop-shadow(-5px 5px 3px #2b2b2b)drop-shadow(0px -2px 7px #ffffff96);
@@ -143,6 +147,7 @@
         .hover_animation:active{
             animation: vibrate 0.5s linear 0s infinite normal forwards;
         }
+
 /*______ Custom classes________ */
         
 

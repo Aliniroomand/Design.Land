@@ -24,7 +24,7 @@ const Navbar = () => {
         return (
             <nav className="">
             <section onClick={closeHandler} className="fixed z-[100] bottom-0 right-0 cursor-pointer w-1/5 h-1/6">
-                    <img className="fixed wobble drop-shadow-4xl bottom-[-50px] right-[-45px] w-[170px] " src={balloon} alt="balloon" />
+                    <img className="fixed wobble drop-shadow-4xl bottom-[-0px] right-[-45px] w-[100px] " src={balloon} alt="balloon" />
                     <p className="fixed wobble text-2xl  bottom-[70px]  right-[35px]">فهرست</p>
             </section>
                 <section  >
