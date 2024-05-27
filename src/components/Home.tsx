@@ -44,10 +44,10 @@ const Home = () => {
         {/*____Balloon part_____*/}
 
         {/*Flowerpart*/}
-                {/* <Link to="/flower" className='absolute grid place-items-center z-30 w-1/3 h-1/6 top-3 right-0 '>
+                <Link to="/flower" className='absolute grid place-items-center z-30 w-1/3 h-1/6 top-3 right-0 '>
                         <img className="absolute w-full h-full images_shadow  " src={flower_design} alt="flower_design" />
                         <p  className='absolute right-2 text-yellow-400 drop-shadow-8xl md:text-5xl lg:text-2xl lg:w-4/6 text-xl text_shadow font-medium text-center text-nowrap'>دیزاین با گل <br/>و گل آرایی</p>
-                </Link> */}
+                </Link>
         {/*____Flower part_____*/}
         {/*education part*/}
                 {/* <Link to="/flower" className='absolute grid place-items-center z-30 w-1/3 h-1/6 top-0 left-0 '>
@@ -57,17 +57,17 @@ const Home = () => {
         {/*____education  part_____*/}
 
         {/*Fruit part*/}
-                {/* <Link to="/flower" className='absolute grid place-items-center z-30 w-1/2 h-[40%] bottom-0 left-0 '>
+                <Link to="/fruit" className='absolute grid place-items-center z-30 w-1/2 h-[40%] bottom-0 left-0 '>
                         <img className="absolute w-full left-0 h-full drop-shadow-8xl bottom-5 " src={fruit_design} alt="fruit_design" />
                         <p  className='absolute bottom-1/5 left-2 text-yellow-400 drop-shadow-8xl md:text-5xl lg:text-2xl lg:w-4/6 text-xl text_shadow font-medium text-center '>دیزاین با میوه <br/> و میوه آرایی</p>
-                </Link> */}
+                </Link>
         {/*____Fruit part______*/}
 
         {/*Contact part*/}
-                {/* <Link to="/flower" className='absolute grid place-items-center z-30 w-1/3 h-1/6 bottom-[45%] left-0 '>
+                <Link to='commentsAndContact' className='absolute grid place-items-center z-30 w-1/3 h-1/6 bottom-[45%] left-0 '>
                         <img className="absolute w-full left-0 h-full images_shadow bottom-0 " src={contatct_us} alt="contatct_us" />
                         <p  className='absolute bottom-5 text-yellow-400 drop-shadow-8xl md:text-5xl lg:text-2xl lg:w-4/6 text-xl text_shadow font-medium text-center '>تماس با ما<br/>و نظرات</p>
-                </Link> */}
+                </Link>
                 
     {/*____Contact part_______*/}
 

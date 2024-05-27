@@ -6,7 +6,7 @@ const Contact_comments = () => {
         <PagesTransition>
             
         <div className=" h-screen w-screen bg-slate-600">
-             fruit Design
+             contact and comments
         </div>
         <ReturnButton/>
         </PagesTransition>
