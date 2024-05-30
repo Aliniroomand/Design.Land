@@ -6,6 +6,7 @@ import Balloon_Design from "./components/Balloon_design/Balloon_Design";
 import Fruit_Design from "./components/Fruit_design/Fruit_Design";
 import Flower_Design from "./components/Flower_design/Flower_Design";
 import Contact_comments from "./components/Contact_Comments/Contact_comments";
+import Learning from "./components/learning/Learning";
 
 
 
@@ -20,7 +21,7 @@ const routes:RouteObject[]=[{
         {path:'/balloon', element:<Balloon_Design/>},
         {path:'/fruit', element:<Fruit_Design/>},
         {path:'/flower', element:<Flower_Design/>},
-        {path:'/commentsAndContact', element:<Contact_comments/>},
+        {path:'/learning', element:<Learning/>},
         {path:'/commentsAndContact', element:<Contact_comments/>},
 
     ]
